@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.18.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "modern-quick-links",
+    "libraryId": "bb118ea4-dfac-4022-b0a9-578c466783c7",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "modern-quick-links",
+    "solutionShortDescription": "modern-quick-links description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

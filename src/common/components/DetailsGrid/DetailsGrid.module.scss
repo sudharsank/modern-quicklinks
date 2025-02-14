@@ -1,0 +1,151 @@
+.detailsList {
+	font-family: Calibri !important;
+	a {
+		font-weight: normal;
+		font-size: 17px;
+		color: "[theme:themePrimary]";
+		//font-family: Calibri !important;
+		display: inline;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&:hover {
+			color: "[theme:themeSecondary]";
+			text-decoration: underline;
+		}
+	}
+	.status {
+		text-align: center;
+		width: 37px;
+	}
+	div[role=columnheader] {
+		//font-family: Calibri !important;
+    	font-size: 14px;
+		font-weight: bold;
+	}
+	div[data-automationid="DetailsRowFields"] {
+		//font-family: Calibri !important;
+		font-size: 14px;
+	}	
+}
+.searchLoader {
+	display: inline-flex;
+	margin-top: -10px;
+	position: absolute;
+	right: 10px;
+}
+.favSearch {
+	//font-family: Calibri !important;
+	font-size: 15px;
+}
+.fieldCustomizer {
+	min-height: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	.divPersona {
+		display: inline-flex;
+		align-items: center;
+		height: 30px;
+		overflow: hidden;
+		border-radius: 12px;
+		padding-right: 8px;
+		margin: 2px;
+		background-color: #edebe9;
+	}
+	.divPersona div:nth-child(2) {
+		padding: 0px 5px !important;
+	}
+	.fieldContent {
+		box-sizing: border-box;
+		padding: 4px 8px 5px 8px;
+		display: flex;
+		border-radius: 16px;
+		min-height: 24px;
+		align-items: center;
+		overflow: hidden;
+		margin-right: 4px;
+		.spnContent {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding: 0 2px;
+			white-space: nowrap;
+			font-family: 'Calibri';
+		}
+	}
+	.textTruncate {
+		white-space: normal;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+	.fieldContent.redbgColor {background-color: #fbd3d3;}
+	.fieldContent.greenbgColor {background-color: #baf3ba;}
+	.fieldContent.yellowbgColor {background-color: #fbe3c4;}
+	.fieldContent.purplebgColor {background-color: #c0b1e6;}
+	.fieldContent.pinkbgColor {background-color: #f2b2f2;}
+	.fieldContent.orangeMixbgColor {background-color: #f291b5;}
+	.fieldContent.orangebgColor {background-color: #ffc1ae;}
+	.fieldContent.brownbgColor {background-color: #ffdeb5;}
+	.fieldContent.yellowMixbgColor {background-color: #fff7d1;}
+	.fieldContent.tealbgColor {background-color: #dcffe9;}
+	.fieldContent.bluebgColor {background-color: #c8faff;}
+}
+.redBox {color: rgb(161, 10, 10);}
+.greenBox{color: rgb(7, 133, 7);}
+.yellowBox {color: rgb(126, 75, 9);}
+.purpleBox {color: black;}//#9e77ff;
+.pinkBox {color: black;}//#db5ed9;
+.orangeMixBox {color: black;}//#de4178;
+.orangeBox {color: #f3440a;}
+.brownBox {color: black;}//#e69b39;
+.yellowMixBox {color: black;}//#e8d253;
+.tealBox {color: black;}//#5eeba2;
+.blueBox {color: black;}//#4ccded;
+
+.boxStyle {
+	padding: 10px;
+	box-shadow: 1px 2px 11px 1px #CCC;
+	border-radius: 8%;
+	margin-left: -8px;
+	margin-right: 10px;
+	width: 50%;
+}
+.paginationContainer {
+  text-align: right;
+  font-size: var(--q-fontsize);
+  font-family: var(--q-fontfamily);
+  .searchWp__paginationContainer__pagination {
+    text-align: center;
+    ul {
+      display: inline-block;
+      padding-left: 0;
+      border-radius: 4px;
+      li {
+        display: inline;
+        a {
+          float: left;
+          padding: 5px 10px;
+          text-decoration: none;
+          border-radius: 15px;
+          i {
+            font-size: 10px;
+          }
+        }
+		  a:hover {
+			border-color: "[theme:themeLight]" !important;
+          	background-color: "[theme:themeLight]" !important;
+            color: "[theme:primaryButtonText]";
+		  }
+        a.active {
+			border-color: "[theme:themePrimary]" !important;
+          	background-color: "[theme:themePrimary]" !important;
+            color: "[theme:primaryButtonText]";
+        }
+      }
+    }
+  }
+}

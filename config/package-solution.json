@@ -1,0 +1,41 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+        "name": "Modern-Quick-Links",
+        "id": "bb118ea4-dfac-4022-b0a9-578c466783c7",
+        "version": "3.0.0.0",
+        "includeClientSideAssets": true,
+        "skipFeatureDeployment": true,
+        "isDomainIsolated": false,
+        "developer": {
+            "name": "Sudharsan K.",
+            "websiteUrl": "https://spknowledge.com/2021/10/15/modern-comments-for-sharepoint-online-pages-news-articles-and-for-much-more/",
+            "privacyUrl": "https://spknowledge.com/modern-comments-privacy-policy/",
+            "termsOfUseUrl": "https://go.microsoft.com/fwlink/?linkid=2041178",
+            "mpnId": "52012460"
+        },
+        "title": "Modern QuickLinks",
+        "metadata": {
+            "shortDescription": {
+                "default": "Links with different styles for modern pages."
+            },
+            "longDescription": {
+                "default": "Links with different styles that can support modern pages. Common links across the organization and also the user defined links can be displayed on the same web part. A lists that can be easily maintained by the Site owners or the Administrators to manage the links."
+            },
+            "screenshotPaths": [],
+            "videoUrl": "",
+            "categories": []
+        },
+        "features": [
+            {
+                "title": "Modern QuickLinks feature",
+                "description": "The feature that activates the 'Modern QuickLinks' to be used in modern pages.",
+                "id": "059c1de0-d45f-4af2-b96a-a5b710ba75ec",
+                "version": "3.0.0.0"
+            }
+        ]
+    },
+    "paths": {
+        "zippedPackage": "solution/modern-quick-links.sppkg"
+    }
+}

@@ -1,0 +1,547 @@
+/* Common */
+.textTruncate {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* Common */
+
+/* License */
+.licenseCheck {
+    margin: 0px;
+
+    .adminKeyInfo {
+        font-weight: 600;
+        color: red;
+        font-style: italic;
+    }
+    .noteSpan {
+        font-weight: bold;
+        font-style: italic;
+        padding-right: 5px;
+    }
+}
+
+.configLicLink,
+.configLink {
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+.configHeader {
+    text-align: left;
+    font-weight: bold;
+}
+
+.configList {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+/* License */
+
+/* Custom Panel */
+
+.customPanel {
+    .header {
+        padding: 10px;
+        border-bottom: 1px dotted;
+        font-weight: 700;
+    }
+}
+
+/* Custom Panel */
+
+/** Message */
+.MessageContainer {
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5em;
+    width: 100%;
+    margin-top: 10px;
+
+    .msgText {
+        font-size: 16px;
+        color: black !important;
+        font-weight: bold !important;
+    }
+
+    .errorMessage {
+        background-color: "[theme:errorBackground]";
+        text-align: center;
+
+        i {
+            color: "[theme:errorIcon]";
+        }
+
+        .msgText {
+            color: "[theme:errorText]";
+        }
+    }
+
+    .successMessage {
+        background-color: "[theme:successBackground]";
+        text-align: center;
+
+        i {
+            color: "[theme:successIcon]";
+        }
+
+        .msgText {
+            color: "[theme:successText]";
+        }
+    }
+
+    .warningMessage {
+        background-color: "[theme:warningBackground]";
+        text-align: center;
+
+        i {
+            color: "[theme:warningIcon]";
+        }
+
+        .msgText {
+            color: "[theme:warningText]";
+        }
+    }
+
+    .infoMessage {
+        background-color: "[theme:infoBackground]";
+        text-align: center;
+
+        i {
+            color: "[theme:infoIcon]";
+        }
+
+        .msgText {
+            color: "[theme:inputText]";
+        }
+    }
+
+    .severeWarningMessage {
+        background-color: "[theme:severeWarningBackground]";
+        text-align: center;
+
+        i {
+            color: "[theme:severeWarningIcon]";
+        }
+
+        .msgText {
+            color: "[theme:inputText]";
+        }
+    }
+
+    .blockedMessage {
+        background-color: "[theme:blockingBackground]";
+        text-align: center;
+
+        .msgText {
+            color: "[theme:inputText]";
+        }
+    }
+
+    span {
+        font-size: 14px !important;
+        font-weight: 500;
+        font-family: "Calibri" !important;
+    }
+
+    div[class^="ms-MessageBar-icon"] {
+        margin: 10px 0px 10px 10px !important;
+    }
+
+    div[class^="ms-MessageBar-text"] {
+        margin: 10px 10px 10px 6px !important;
+    }
+}
+
+/** Message */
+
+/** Settings */
+
+.divFormContainer {
+    padding: 4px 3px;
+    position: relative;
+
+    .divLabel {
+        display: flex;
+        margin-bottom: 5px;
+
+        i {
+            margin-top: 2px;
+        }
+
+        .titleIcon {
+            margin-right: 8px;
+            align-self: center;
+            font-size: 15px;
+            margin-top: 1px;
+            color: #666666;
+        }
+
+        .fieldTitle {
+            font-weight: 600;
+            font-size: 14px;
+            padding-bottom: 5px;
+            margin-top: -2px;
+            margin-left: 5px;
+        }
+
+        .fieldTitleReq {
+            &:after {
+                content: " *";
+                color: rgb(164, 38, 44);
+                padding-right: 12px;
+            }
+        }
+    }
+
+    .divField {
+        display: inline-block;
+        vertical-align: top;
+        width: 99%;
+
+        div[class*="fieldGroup"]::after,
+        div[class*="dropdown"]::after {
+            content: none;
+        }
+    }
+}
+
+/** Settings */
+
+/** Webpart Header */
+
+.headerStack {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid;
+    border-color: "[theme:themeTertiary]";
+
+    .headerDiv {
+        font-weight: bold;
+        font-size: 22px;
+        margin-top: -4px;
+        padding-left: 5px;
+    }
+    .headerIcon {
+        font-size: 21px;
+    }
+    .manageListIcon {
+        font-size: 20px;
+    }
+    .addLinkIcon {
+        font-size: 20px;
+    }
+}
+
+/** Webpart Header */
+
+/** NewsList Settings */
+
+.cmContainer {
+
+    // Section
+    .sectionContainer {
+        width: 100%;
+    }
+
+    .sectionContainer_left {
+        margin-right: 5px;
+    }
+
+    .sectionContainer_right {
+        margin-left: 5px;
+    }
+
+    .sectionTitle {
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    // Source Info
+    .div_itemCount {
+        text-align: center;
+
+        .spn_label {
+            color: darkslategrey;
+            font-weight: 500;
+        }
+
+        .spn_value {
+            padding: 1px 5px;
+            margin-left: 5px;
+            border-radius: 10%;
+            font-weight: bold;
+        }
+
+        .spn_value_green {
+            background-color: green;
+            color: white;
+        }
+
+        .spn_value_orange {
+            background-color: orange;
+            color: black;
+        }
+
+        .spn_value_red {
+            background-color: red;
+            color: white;
+        }
+
+        .spn_itemcount {
+            display: inline-flex;
+            margin-top: -20px;
+            margin-left: -10px;
+        }
+    }
+
+    // Destination list
+    .destListContainer {
+        width: 60%;
+        display: flex;
+        margin-bottom: 10px;
+        margin: 0 auto;
+
+        .listDDL {
+            width: 100%;
+        }
+    }
+}
+
+.sitesListSelContainer {
+    .favSearch {
+        font-family: Calibri !important;
+        font-size: 15px;
+    }
+
+    .searchLoader {
+        display: inline-flex;
+        margin-top: -10px;
+        right: 10px;
+    }
+
+    .SitesListsBorder {
+        margin-bottom: 15px;
+        min-height: 500px;
+    }
+
+    .cellStyle {
+        margin: 0px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .headerDiv {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .sitesContainer {
+        min-height: 300px;
+        max-height: 500px;
+        display: flex;
+        overflow: hidden;
+        margin-right: 15px;
+        height: 100%;
+
+        .siteList {
+            overflow-y: auto;
+        }
+    }
+
+    .listsLoading {
+        width: '100%';
+        margin: 0 auto;
+        position: relative;
+        top: 38%;
+    }
+
+    .listContainer {
+        min-height: 300px;
+        max-height: 500px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .listsList {
+            overflow-y: auto;
+            height: 100%;
+        }
+
+        .dl_lists {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+
+    .noList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+
+        i {
+            font-size: 120px;
+            display: block;
+            margin-bottom: 16px;
+            color: #d0d0d0;
+        }
+
+        .title {
+            padding-bottom: 6px;
+            font-size: 17px;
+            font-weight: 300;
+            font-weight: 600;
+        }
+    }
+
+    .div_itemCount {
+        text-align: center;
+
+        .spn_label {
+            color: darkslategrey;
+            font-weight: 500;
+        }
+
+        .spn_value {
+            padding: 1px 5px;
+            margin-left: 5px;
+            border-radius: 10%;
+            font-weight: bold;
+        }
+
+        .spn_value_green {
+            background-color: green;
+            color: white;
+        }
+
+        .spn_value_orange {
+            background-color: orange;
+            color: black;
+        }
+
+        .spn_value_red {
+            background-color: red;
+            color: white;
+        }
+    }
+}
+
+.fieldMapping {
+
+    // Field
+    .srcFieldContainer {
+        width: 40%;
+        text-align: center;
+        //margin-top: 7px;
+        background: #f0ebeb;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .srcFieldContainerEmpty {
+        width: 40%;
+    }
+
+    .srcFieldContainerFullLength {
+        width: 95%;
+        text-align: center;
+        //margin-top: 7px;
+        background: #f0ebeb;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .field_left {
+        margin-right: 5px;
+        text-align: left;
+    }
+
+    .field_right {
+        margin-left: 5px;
+        text-align: right;
+    }
+
+    .destFieldContainer {
+        width: 35%;
+        background: #f0ebeb;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .destFieldContainerHeader {
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    .iconFieldContainer {
+        width: 5%;
+        text-align: center;
+    }
+
+    .fieldSeparator {
+        width: 20%;
+    }
+
+    .fieldSeparatorHeader {
+        margin: 0 auto;
+        padding-left: 0px;
+        margin-left: 15px;
+    }
+
+    .fieldContainer {
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+
+        .fieldDDL {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+
+    .footerMargins {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btnConfirmMapping {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: fit-content;
+    }
+
+    .fieldMappingScroll {
+        min-height: 500px;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+}
+
+/** NewsList Settings */
